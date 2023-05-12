@@ -1,1 +1,1 @@
-pub mod check_password;
+pub mod check_passwords;

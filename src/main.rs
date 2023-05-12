@@ -1,4 +1,4 @@
-use passwordchecker::check_password;
+use passwordchecker::check_passwords;
 use std::io;
 
 fn main() {
@@ -7,7 +7,7 @@ fn main() {
     io::stdin().read_line(&mut input).unwrap();
     let password = input;
 
-    let result = check_password::check_password(&password);
+    let result = check_passwords::check_password(&password);
     match result {
         Ok(found) => {
             if found {
